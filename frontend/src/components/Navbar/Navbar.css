@@ -1,0 +1,150 @@
+.Navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+} 
+
+.Navbar .logo{
+    width: 150px;
+}  
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+} 
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.Navbar button{
+    background: transparent;
+    font-size: 20px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+} 
+
+.Navbar button:hover{
+    background-color: #fff4f2;
+}   
+
+.navbar-menu li.active {
+    border-bottom: 2px solid #49557e;
+    padding-bottom: 4px;
+}  
+
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+    position: relative;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+.navbar-profile{
+    position: relative;
+}
+
+
+.nav-profile-dropdown{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    display: none;
+    z-index: 1000;
+
+    min-width: 150px;
+    background-color: #fff2ef;
+    padding: 12px 18px;
+    border-radius: 6px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.nav-profile-dropdown img{
+    width: 20px; 
+}
+
+.nav-profile-dropdown li:hover{
+    color: tomato;
+}
+
+@media (max-width:1050px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px){
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+} 
+
+@media (max-width:900px){
+    .navbar-menu{
+        display: none;
+    }
+}

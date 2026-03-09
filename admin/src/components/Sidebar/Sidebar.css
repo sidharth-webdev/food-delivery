@@ -1,0 +1,51 @@
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  border-right: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  padding-top: 30px;
+}
+
+/* This is the wrapper column */
+.sidebar-options {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 30px;
+}
+
+/* Each single item */
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+/* Icon size fix (VERY IMPORTANT) */
+.sidebar-option img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Hover effect */
+.sidebar-option:hover {
+  color: tomato;
+  transform: translateX(5px);
+}
+
+/* Optional background hover */
+.sidebar-option:hover {
+  background-color: #fff4f2;
+  padding: 8px;
+  border-radius: 6px;
+} 
+
+@media (max-width:900px){
+    .sidebar-option p {
+        display: none;
+    }
+} 
