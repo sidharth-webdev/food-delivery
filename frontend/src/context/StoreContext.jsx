@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // import { createContext, useEffect, useState } from "react";
 // import React from "react";
@@ -150,6 +151,8 @@
 // export default StoreContextProvider;     
 
 
+=======
+>>>>>>> ec10313dbccc34b46866aa54dfef54f2c0867fa2
 import { createContext, useEffect, useState } from "react";
 import React from "react";
 import axios from "axios";
@@ -280,4 +283,8 @@ const StoreContextProvider = (props) => {
     </StoreContext.Provider>
   );
 };
+<<<<<<< HEAD
 export default StoreContextProvider; 
+=======
+export default StoreContextProvider; 
+>>>>>>> ec10313dbccc34b46866aa54dfef54f2c0867fa2
