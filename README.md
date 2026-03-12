@@ -3,7 +3,7 @@
 A full-stack food delivery app built with the MERN stack and Stripe payments.
 
 ## 🌐 Live Demo
-- Frontend:food-delivery-p2x7bxkh8-shidharthpradhan999-8337s-projects.vercel.app
+- Frontend:https://food-delivery-catvkyx8w-shidharthpradhan999-8337s-projects.vercel.app
 - Backend:https://food-delivery-backend-z65o.onrender.com
 - Admin:https://food-delivery-g4sw-60hhgjwsx-shidharthpradhan999-8337s-projects.vercel.app
 
