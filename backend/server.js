@@ -27,6 +27,11 @@ app.use("/api/user",userRouter)
 app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter) 
 
+// health check to prevent render sleeping
+app.get("/health", (req, res) => {
+    res.status(200).json({ status: "ok" });
+})
+
 
 app.get("/",(req,res)=>{
     res.send("API Working");
