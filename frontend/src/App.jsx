@@ -17,9 +17,8 @@ const App = () => {
     <>
       {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
 
-      <div className='app'>
+      <div className={`app ${showLogin ? 'blur' : ''}`}>
         <Navbar setShowLogin={setShowLogin} />
-
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
@@ -34,4 +33,4 @@ const App = () => {
   )
 }
 
-export default App;  
+export default App; 
