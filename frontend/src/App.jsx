@@ -11,29 +11,27 @@ import MyOrders from './pages/MyOrders/MyOrders';
 
 const App = () => {
 
-const [showLogin, setShowLogin] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   return (
     <>
-    {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
+      {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
 
-    {!showLogin && (
-      <>
-        <div className='app'>
-          <Navbar setShowLogin={setShowLogin} />
+      <div className='app'>
+        <Navbar setShowLogin={setShowLogin} />
 
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/cart' element={<Cart />} />
-            <Route path='/order' element={<PlaceOrder />} />
-            <Route path='/verify' element={<Verify/>} /> 
-            <Route path='/myorders' element={<MyOrders/>} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/order' element={<PlaceOrder />} />
+          <Route path='/verify' element={<Verify/>} />
+          <Route path='/myorders' element={<MyOrders/>} />
+        </Routes>
+      </div>
 
-        <Footer />
-      </>
-    )}
-  </>
-)}
+      <Footer />
+    </>
+  )
+}
+
 export default App;
